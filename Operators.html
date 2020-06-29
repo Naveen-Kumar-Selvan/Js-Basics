@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<title> OPERATOR </title>
+<style>
+body{
+	text-align: center;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  padding: 5px;
+  text-align: left; 
+}
+</style>
+</head>
+<body>
+	<h2> Operator Practicing </h2>
+	</br>
+	</br>
+	<table border: 1px padding: 5px>
+		<tbody><tr><td><b> SUBJECT </b></td><td><b> MARK </b></td>
+		<tr><td><b> Tamil </b></td><td>75</td>
+		<tr><td><b> English </b></td><td>80</td>
+		<tr><td><b> Maths </b></td><td>70</td>
+		<tr><td><b> Total </b></td><td id="new1"> avg </td>
+		<tr><td><b> Average </b><td id="new"> total </td>
+	</tbody></table>
+	
+	<script>
+		document.getElementById("new1").innerHTML = 75 + 80 + 70;
+		document.getElementById("new").innerHTML = (75 + 80 + 70)/3;
+		
+	</script>
+</body>
+</html>

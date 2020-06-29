@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<h2>Input Validation</h2>
+	<form name="new" action="detaiils.php">
+		<label for="name">Name:</label><br>
+		<input type="text" id="name" name="name" required ><br> </br>
+		<label for="numb">Phone Number:</label><br>
+		<input id="numb">
+		</br> 
+		<div onsubmit="return validate()"><h3> Subject Interests: </h3>
+			 <input type="checkbox" id="subject1" name="subject interest" value="Machine Design">
+			 <label for="subject"> Machine Design </label><br>
+			 <input type="checkbox" id="subject2" name="subject interest" value="Engineering Mechanics">
+			 <label for="subject"> Engineering Mechanics</label><br>
+			 <input type="checkbox" id="subject3" name="subject interest" value="Thermal Engineering">
+			  <label for="subject"> Thermal Engineering</label><br>
+		</div></br> 
+		<button type="button" onclick="myFunction()">Submit</button>
+
+		<p id="demo"></p>
+	</form>
+	<script>
+		function myFunction() {
+		  var x, text;
+		  x = document.getElementById("numb").value;
+		  if (isNaN(x) || x < 1 || x > 10) {
+			text = "Input not valid";
+		  }
+		  else {
+			text = "Input OK";
+		  }
+		  document.getElementById("demo").innerHTML = text;
+		}
+		 function validate(){
+		var valid = false;
+		if (document.getElementById("subject1").checked){
+			valid = true;
+		}
+		else if (document.getElementById("subject2").checked){
+			valid = true;
+		}
+		else if (document.getElementById("subject3").checked){
+			valid = true;
+		}
+		if(valid){
+			text = "Please select any one subject";
+		}
+		else{
+			text = "";
+			return false;
+		}
+		} 
+	</script>
+
+</body>
+</html> 
