@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<p><h2>Checking whether the number lies between 10 & 100 or not</h2></p>
+	<p id="check"></p>
+	<script>
+		var a;
+		a = 20;
+		if ( 10< a && a< 100) {
+		  document.getElementById("check").innerHTML = "The number lies between 10 and 100";
+		  var one, two, result;
+			one = 0;
+			two = 1;
+			result = two;
+			for (var i=1; i<=a; i++)
+			{
+				document.write(result+"<br/>");
+				result = one + two;
+				one = two;
+				two = result;
+			} 
+		}
+		else 
+		{
+			document.getElementById("check").innerHTML = " The number is not between 10 and 100 " ;
+		}
+	</script>
+</body>
+</html>

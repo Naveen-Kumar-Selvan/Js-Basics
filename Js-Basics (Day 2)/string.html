@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<title> String </title>
+<body>
+
+<h2>String</h2>
+
+<p><b>Finding the 5th, 7th and 10th word in the given description</b></p>
+
+<p id="check"></p>
+<p id="check1"></p>
+<p id="check2"></p>
+
+<script>
+var str = "HTML, is, a, Hypertext, Markup, Language, and, it, is, used, to, design, webages, with, the, help, of, CSS, and, JavaScript";
+var res = str.slice(23,30);
+var res1 = str.slice(42,45); 
+var res2 = str.slice(55,59);
+document.getElementById("check").innerHTML = res;
+document.getElementById("check1").innerHTML = res1 
+document.getElementById("check2").innerHTML = res2; 
+</script>
+
+</body>
+</html>
